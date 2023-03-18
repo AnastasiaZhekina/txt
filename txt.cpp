@@ -64,13 +64,13 @@ int main()
 };
 void right(int* a, int m) {
     int n = a[m - 1];
-    for (int i = m - 1; i >= 0; i--)
+    for (int i = m - 1; i > 0; i--)
         a[i] = a[i - 1];
     a[0] = n;
 }
 void left(int* a, int m) {
     int n = a[0];
-    for (int i = 0; i < m; i++)
+    for (int i = 0; i < m-1; i++)
         a[i] = a[i + 1];
     a[m - 1] = n;
 }
